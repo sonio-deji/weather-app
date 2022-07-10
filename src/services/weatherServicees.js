@@ -55,7 +55,7 @@ const formatForecastWeather = (data) => {
      })
      hourly = hourly.slice(1, 6).map(d => {
         return {
-            title: formatToLocaleTime(d.dt, timezone, 'ccc'),
+            title: formatToLocaleTime(d.dt, timezone, 'hh:mm a'),
             temp: d.temp.toFixed(),
             icon: d.weather[0].icon
         }
