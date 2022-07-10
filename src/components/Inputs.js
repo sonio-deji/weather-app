@@ -31,7 +31,7 @@ function Inputs({setquery, units, setunits}) {
   return (
     <div className='flex flex-row justify-center my-6'>
 
-        <div className='flex flex-row w-3/4 items-center justify-center space-x-4'>
+        <div className='flex flex-row w-3/4 items-center justify-center space-x-4 p-2'>
 
             <input type="text" 
             className='text-xl font-light p-2 w-64 shadow-xl focus:outline-none capitalize placeholder:lowercase' placeholder='Search for city...'

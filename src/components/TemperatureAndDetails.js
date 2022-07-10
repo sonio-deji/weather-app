@@ -12,24 +12,24 @@ function TemperatureAndDetails ({weather: {details, icon, temp, temp_min, temp_m
             alt="" 
             className="w-20" 
             />
-            <p className="text-5xl"> {`${temp.toFixed()}°`}</p>
+            <p className="text-xl sm:text-5xl"> {`${temp.toFixed()}°`}</p>
 
             <div className="flex flex-col space-y-2">
 
                 <div className="flex font-light text-sm items-center justify-center">
-                    <UilTemperature size={18} className='mr-1' />
+                    <UilTemperature size={15} className='mr-1' />
                     Real feel:
                     <span className='font-medium ml-1'> {`${feels_like.toFixed()}°`}</span>
                 </div>
 
                 <div className="flex font-light text-sm items-center justify-center">
-                    <UilTear size={18} className='mr-1' />
+                    <UilTear size={15} className='mr-1' />
                     Humidity:
                     <span className='font-medium ml-1'> {`${humidity}%`}</span>
                 </div>
 
                 <div className="flex font-light text-sm items-center justify-center">
-                    <UilWind size={18} className='mr-1' />
+                    <UilWind size={15} className='mr-1' />
                     Wind:
                     <span className='font-medium ml-1'> {`${speed}`}Km/hr</span>
                 </div>
