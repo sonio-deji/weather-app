@@ -1,6 +1,6 @@
-import React,{ useState } from 'react'
+import { useState } from 'react';
 import { UilSearch, UilLocationPoint } from '@iconscout/react-unicons';
-import {toast} from 'react-toastify'
+import {toast} from 'react-toastify';
 
 function Inputs({setquery, units, setunits}) {
   const [city, setcity] = useState('');
@@ -37,6 +37,7 @@ function Inputs({setquery, units, setunits}) {
             <input type="text" 
             className='text-xl font-light p-2 w-64 shadow-xl focus:outline-none capitalize placeholder:lowercase' placeholder='Search for city...'
             onChange={(e) => setcity(e.target.value)}
+            value={city}
              />
              </form>
             <UilSearch size={25} className='text-white cursor-pointer transition ease-out hover:scale-125' onClick={handleSearchClick}/>
