@@ -25,13 +25,13 @@ function TemperatureAndDetails ({weather: {details, icon, temp, temp_min, temp_m
                 <div className="flex font-light text-sm items-center justify-center">
                     <UilTear size={15} className='mr-1' />
                     Humidity:
-                    <span className='font-medium ml-1'> {`${humidity}%`}</span>
+                    <span className='font-medium ml-1'> {`${humidity.toFixed()}%`}</span>
                 </div>
 
                 <div className="flex font-light text-sm items-center justify-center">
                     <UilWind size={15} className='mr-1' />
                     Wind:
-                    <span className='font-medium ml-1'> {`${speed}`}Km/hr</span>
+                    <span className='font-medium ml-1'> {`${speed.toFixed()}`}Km/hr</span>
                 </div>
 
             </div>
